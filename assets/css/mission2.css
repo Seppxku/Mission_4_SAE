@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul.navbar-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #344E41;
+    position: sticky;
+    width: 100%;
+}
+
+ul.navbar-list > li {
+    height: 4em;
+    width: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.navbar-list > li:hover {
+    background-color: #2e453a;
+}
+
+ul.navbar-list > li > a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #DAD7CD;
+}
+
