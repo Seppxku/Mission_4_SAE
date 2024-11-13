@@ -1,3 +1,12 @@
+/* Palette de couleurs :
+1 :
+2 : #A3B18A
+3: #588157
+4 : #3A5A40
+5 : #344E41
+*/
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+
 :root {
     --background-color : #DAD7CD;
     --nav-bar-color : #344E41;
@@ -6,16 +15,17 @@
     --vert: #588157;
     --vert-fonce : #3A5A40;
 }
-
-
 body {
-    margin : 0;
-    padding-left: 0;
+    margin: 0;
+    padding: 0;
+    padding-top: 3em;
     background-color: var(--background-color);
+    font-family: "Host Grotesk", sans-serif;
+
 }
 
-nav {
-    position: sticky;
+header > nav {
+    position: fixed;
     width: 100%;
     top : 0;
     background-color: var(--nav-bar-color);
@@ -23,7 +33,7 @@ nav {
 
 }
 
-nav > ul.navbar-list {
+header > nav > ul.navbar-list {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -43,55 +53,33 @@ ul.navbar-list > li {
 }
 
 ul.navbar-list > li:hover {
-    background-color: #2e453a;
+    background-color: var(--nav-bar-hover);
 }
 
 ul.navbar-list > li > a {
     font-size: 1.5em;
     text-decoration: none;
-    color: #DAD7CD;
+    color: var(--background-color);
 }
 
-h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 2em;
-
-
+ul.liste-questions-bdd {
+    list-style-type: circle;
 }
 
-p {
-    margin: 0;
-
-}
-
-article, section {
-    margin: 10px;
-}
-
-
-section {
-    font-size: 25px;
-    text-decoration: underline;
-}
-
-article {
-    padding: 3px;
-}
-
-ol {
-    margin: 15px
-}
-
-
-.lettres {
+ul.liste-stack-web {
     list-style-type: lower-alpha;
 }
 
-.lettres li::marker{
-    color: #344E41;
+header > h1 {
+    text-decoration: underline;
 }
 
-mark {
-    background-color: yellow;
+table, td, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#meme-img{
+    display: flex;
+    justify-content: center;
 }
