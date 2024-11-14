@@ -17,11 +17,25 @@
 }
 body {
     margin: 0;
-    padding: 0;
-    padding-top: 3em;
+    padding: 4em 0 0 0;
     background-color: var(--background-color);
     font-family: "Host Grotesk", sans-serif;
+}
 
+h1,h2 {
+    margin-left: 1rem;
+}
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.3em;
+    text-decoration: underline;
+}
+p {
+    font-size: 1.2em;
+    margin: 1em;
 }
 
 header > nav {
@@ -77,6 +91,11 @@ header > h1 {
 table, td, tr {
     border: 1px solid black;
     border-collapse: collapse;
+}
+
+ul {
+    font-size: 1.1em;
+    margin-left: 2em;
 }
 
 #meme-img{
