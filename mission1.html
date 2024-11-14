@@ -1,133 +1,85 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Mission 1</title>
-    <link href="assets/css/mission1.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Mission 1</title>
+  <link href="assets/css/mission1.css" rel="stylesheet">
 </head>
+
 <body>
-<nav>
+<header>
+  <nav>
     <ul class="navbar-list">
-        <li> <a href="index.html">Accueil</a></li>
-        <li> <a href="mission1.html">Mission 1</a></li>
-        <li> <a href="mission2.html">Mission 2</a></li>
-        <li> <a href="mission3.html">Mission 3</a></li>
-        <li><a href="conclusion.html">Conclusion</a></li>
+      <li> <a href="index.html">Accueil</a></li>
+      <li> <a href="mission1.html">Mission 1</a></li>
+      <li> <a href="mission2.html">Mission 2</a></li>
+      <li> <a href="mission3.html">Mission 3</a></li>
+      <li><a href="conclusion.html">Conclusion</a></li>
     </ul>
-</nav>
+  </nav>
+</header>
 
-<h1>Mission 1: Conception – Interrogation d’une base de données</h1>
+<main>
+  <section class="introduction">
+    <h1>Mission 1: Conception – Interrogation d’une base de données</h1>
+    <p>Pour cette <strong>première</strong> mission, l’objectif était de se familiariser avec les outils et données que l’on possède.</p>
+    <p>Avant le début de toute manipulation de données, nous devions en premier lieu découvrir la base de données de <strong>Kdou</strong> ainsi que le <mark>Query By Example (QBE)</mark> dans Microsoft Access
+      qui nous permet de manipuler les données présentes dans la base.</p>
+    <p>Pour se faire, nous avons constitué différentes requêtes plus ou moins complexes permettant de faire le lien entre les différentes tables constituant la base de données de Kdou.</p>
+  </section>
 
-<section> Question 1:</section>
-<article>
-    <p>Dans l’onglet <strong>« Fournisseur »</strong>, nous pensons que les colonnes
-        correspondantes ou pouvant correspondre à une clé primaire est la colonne des
-        numéros de fournisseurs et aussi celle des numéros de téléphones.</p>
-    <p>Pour l’onglet <strong>« Produit »</strong> la clé primaire est la colonne des références produits.</p>
-    <p>Pour l’onglet <strong>« Catégorie »</strong> la clé primaire est la colonne des codes catégories.</p>
-    <p>Pour l’onglet <strong>« Clientèle »</strong> les colonnes correspondantes ou pouvant
-        correspondre à une clé primaire sont la colonne correspondante au code client et
-        celle des numéros de </p>
-    <p>Pour l’onglet <strong>« Commande »</strong> la clé primaire est la colonne des numéros de
-        commande.</p>
-    <p>Pour l’onglet <strong>« DétailCommande »</strong> la clé primaire est la colonne des numéros de
-        commande.</p>
-</article>
-
-<section> Question 2:</section>
-<article>
-    <p><mark>Pour rappel, une clé étrangère est définie par un ensemble d’attributs d’une
-        table qui correspond à une clé primaire d’une autre relation. Elle exprime un lien
-        entre deux tables.</mark></p>
-    <p>Pour l’onglet <strong>« Fournisseur »</strong>, nous pensons qu’il n’y a pas de clé étrangère.</p>
-    <p>Pour l’onglet <strong>« Produit »</strong>, nous pensons que les clés étrangères sont la colonne
-        qui correspond au numéro de fournisseur et au code catégorie.</p>
-    <p>Pour l’onglet <strong>« Clientèle »</strong>, nous pensons qu’il n’y a pas de clé étrangère.</p>
-    <p>Pour l’onglet <strong>« Commande »</strong>, nous pensons que la clé étrangère est la colonne
-        des codes clients.</p>
-    <p>Pour l’onglet <strong>« DétailCommande »</strong>, nous pensons que la clé étrangère est la
-        colonne des références produits.</p>
-</article>
-
-<section> Question 3:</section>
-<article>
-    <ol class="lettres">
-        <li>Il existe trois clients nantais.</li>
-        <li>Il existe cinq clients issus de la région parisienne..</li>
-        <li>L’adresse du fournisseur Marie Delamare est la suivante : 22, rue H. Voiron,
-            Montceau 71300.</li>
-        <li>Il y a sept fournisseurs en Amérique du Nord.</li>
-        <li>Il y a huit pays dans l’UE hormis la France. (Pour cette question nous avons
-            cherché un moyen optimal de filtrer et pour cela nous avons fait un clic droit sur
-            la colonne des pays, cliqué sur « filtrer » puis sur « filtrer par la valeur de la
-            cellule sélectionnée ». Il suffit ensuite de cocher les cases qui correspondent aux
-            pays effectivement membres de l’UE en prenant soin de ne pas cocher la France
-            et de ne pas compter les pays qui reviennent plusieurs fois.)</li>
-        <li>Il est directeur marketing.</li>
-        <li>La fonction qui revient le souvent est celle de représentant(e) qui apparaît huit
-            fois.</li>
-        <li>Il n’existe aucun Mikal portant pour nom de famille « Pavbo ». Ce nom
-            correspondant à un code client qui appartient à un certain Mikal Torin. La
-            réponse, dans ce contexte, est donc zéro.</li>
-        <li>Il n’existe aucun client qui a pour code « MORIU » si ce n’est un client qui
-            porte pour code « MORJU ». Dans ce contexte-là, le client MORIU n’a donc
-            passé aucune commande.</li>
-        <li>L’offre correspondant à des produits suédois est la suivante : « Tunnbröd »,
-            « Inlagd Sill », « Gravad lax », « Röd Kaviar », « knäckebrod Kala », « Dea
-            Surströmming », « Kanelbullar Stock ». Soit sept au total.</li>
-        <li>Les catégories de produits vendues par les fournisseurs Singapouriens sont les
-            suivantes : « Boissons » et « Condiments ».</li>
-        <li>Les codes clients appartenant à un client déjà existant mais qui n’a pas passé
-            de commande sont : « ATAUG », « AUBBA », « CONTIG », « GOURL » et
-            « HOTLA ».</li>
-        <li>Les produits sont conditionnés sous différentes formes : boîtes, bouteilles,
-            cartons, paquets, pots, sacs, canettes, verres, pièces, plaquettes, unités, tartes,
-            tablettes, litres…</li>
+  <section class="requete-une-table">
+    <h2>Après avoir localisé les clés primaires et les potentielles clés étrangères de chaque table, nous avons d’abord effectué des requêtes nécessitant une seule table :</h2>
+    <ol class = "list">
+      <li>Obtenir le nombre de client ou de fournisseur se trouvant dans différentes régions du monde ou de la France (clients nantais, fournisseur nord-américains...).</li>
+      <li>Obtenir des adresse de fournisseurs.</li>
+      <li>Obtenir les différentes fonctions des fournisseurs, voir image ci-dessous : </li>
     </ol>
-</article>
+  <figure>
+    <img src = "assets/images/fonctions_fournisseurs.png"
+         alt = "Capture d'écran Access du résultat obtenu pour la requête c de la liste."
+         width = 650
+         height = 200>
+    <figcaption> <em>Extrait du résultat obtenu pour la requête c de la liste. </em></figcaption>
+  </figure>
+    <p>Cependant, lors de la manipulation des données, nous nous sommes rendus comptes qu’il y avait certaines incohérences dans la base de données, ce qui pourrait fausser nos résultats.</p>
+    <p>Nous pouvons citer la présence de doublons tels que S<strong>a</strong>o Paulo et S<strong>ã</strong>o Paulo qui étaient considérées comme deux villes différentes. Il y avait aussi et surtout de nombreuses fautes d’orthographe, rendant la recherche par nom de client très laborieuse.</p>
+  </section>
 
-<section> Question 4:</section>
-<article>
-    <p> <strong> On peut relever quelques incohérences dans les colonnes des tables
-        proposées et dans les documents présentés au sein de l’Annexe :</strong> </p>
-    <ul>
-        <li>Présence de données en doublon (Sao/São Paulo par exemple).</li>
-        <li>Fautes de frappes/orthographe qui peuvent mener à des difficultés de
-            recherche et/ou filtre pour trouver une information (Suède et Suéde).</li>
-        <li>Pas assez de diversité dans les codes des fournisseurs (il existe seulement
-            deux codes pour les fournisseurs du monde entier).</li>
-        <li>Faute d’orthographe sur les noms de fonctions qui mènent à un
-            dédoublement entraînant une erreur sur le nombre total de fournisseurs
-            pour une même fonction donnée.</li>
-        <li>Code client mal orthographié donc commande non reçue (ANCBE qui
-            deviens ANBCE, pour le client l’Ancienne Auberge).</li>
-    </ul></article>
+  <section class="requete-diff-tables">
+    <h2>Après cela, nous avons effectué des requêtes nécessitant les données présentes dans différentes tables. L’objectif étant de s’approprier la notion et le fonctionnement de la jointure :</h2>
+    <ul class="list">
+      <li>Obtenir les informations de produits commandés par un certain client.</li>
+      <li>Obtenir l’offre de produits suédois.</li>
+      <li>Obtenir les catégories de produits vendus par des fournisseurs de différentes nationalités.</li>
+    </ul>
+    <figure>
+      <img src = "assets/images/categ_produits_fournisseur.png"
+           alt = "Capture d'écran Access du résultat obtenu pour la première requête de la liste"
+           width = 650
+           height= 250 >
+      <figcaption> <em>Extrait du résultat obtenu pour la première requête de la liste. </em></figcaption>
+    </figure>
 
-<section> Question 5:</section>
-<article>
-    <p> <strong>Les éléments à modifier/améliorer sont : </strong> </p>
-    <ol>
-        <li>Imposer une unique syntaxe pour les pays qui pourraient être écrits tout en
-            majuscule et sans accent par exemple.</li>
-        <li>Imposer une limite minimale de 0 pour exprimer l’absence d’un produit
-            dans le stock dans l’onglet produit car il y a des enregistrements sans
-            valeur.</li>
-        <li>Vérifier les codes clients dans la feuille des détails de commandes pour
-            empêcher les soucis de gestion de commandes…</li>
-    </ol>
-    <p>A travers ces questions, nous nous sommes rendus compte de la limite de
-        l’utilisation d’Excel en tant que base de données. Il conviendrait plutôt d’utiliser
-        un Système de Gestion de Bases de Données (SGBD) tel que Microsoft Access
-        qui serait plus pertinent grâce à ses outils intégrés et sa possibilité de pouvoir
-        utiliser des langages de requêtes structurées permettant d’accéder plus
-        facilement et rapidement aux informations.</p>
-</article>
+  </section>
+
+<section class="conclusion">
+  <h2>Afin d’éviter ce genre de soucis, nous avons proposé ces améliorations :</h2>
+  <ol class="list">
+    <li>Imposer une unique syntaxe pour les pays qui pourraient être écrits tout en majuscule et sans accent par exemple.</li>
+    <li>Imposer une limite minimale de 0 pour exprimer l’absence d’un produit dans le stock dans l’onglet produit car il y a des enregistrements sans valeur portant ainsi confusion.</li>
+    <li>Vérifier les codes clients dans la feuille des détails de commandes pour empêcher les soucis de gestion de commandes.</li>
+  </ol>
+  <p>En conclusion, cette première mission avait pour objectif principal de nous faire <strong>découvrir les bases de données</strong> et la manipulation de celles-ci. De plus, les différentes requêtes saisies nous ont permis de nous rendre compte que l’utilisation de QBE est assez <strong>limitée</strong>.</p>
+  <p>Cet outil est utile pour la prise en main mais sera vite obsolète lorsque nous souhaiterons saisir des requêtes beaucoup plus complexes dans les missions suivantes. D’où l’intérêt d'utiliser le langage <strong>SQL</strong>.</p>
+</section>
+</main>
 
 <footer>
-    <hr>
-    <p>Site internet développé et mis en ligne en 2024 par Hideur Samy, Dufour Isham, Minette Jim-Anderson & Keskas Loqman pour l'entreprise KDou.</p>
-    <p>Toute ressemblance avec une entreprise réelle serait purement fortuite.</p>
-    <p>Tous droits réservés.</p>
+  <hr>
+  <p>Site internet développé et mis en ligne en 2024 par Hideur Samy, Dufour Isham, Minette Jim-Anderson & Keskas Loqman pour l'entreprise KDou.</p>
+  <p>Toute ressemblance avec une entreprise réelle serait purement fortuite.</p>
+  <p>Tous droits réservés.</p>
 </footer>
 </body>
 </html>

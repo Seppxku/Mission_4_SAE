@@ -45,7 +45,7 @@ header > nav > ul.navbar-list {
 }
 
 ul.navbar-list > li {
-    height: 4em;
+    height: 8vh;
     width: 10em;
     display: flex;
     align-items: center;

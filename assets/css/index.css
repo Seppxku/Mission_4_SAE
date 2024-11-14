@@ -17,11 +17,9 @@
 }
 body {
     margin: 0;
-    padding: 0;
-    padding-top: 1em;
+    padding: 1em 0 0 0;
     background-color: var(--background-color);
     font-family: "Host Grotesk", sans-serif;
-
 }
 
 nav {
@@ -41,13 +39,11 @@ nav > ul.navbar-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
-
-
     width: 100%;
 }
 
 ul.navbar-list > li {
-    height: 4em;
+    height: 8vh;
     width: 10em;
     display: flex;
     align-items: center;
@@ -71,9 +67,12 @@ header {
 
 h1, h2, h3 {
     text-decoration: underline;
+    margin: 1rem;
+    font-size: 1.5em;
 }
 
-section > p {
+p {
+    margin: 1em;
     font-size: 1.2em;
 }
 
@@ -83,9 +82,9 @@ section > ul {
     line-height: 2em;
 }
 
-section > h3 {
-    font-size: 1.5em;
-}
+
+
+
 
 
 
