@@ -78,10 +78,14 @@ ul.navbar-list > li > a {
 
 ul.liste-questions-bdd {
     list-style-type: circle;
+    font-size: 1.1em;
+    margin-left: 2em;
 }
 
 ul.liste-stack-web {
     list-style-type: lower-alpha;
+    font-size: 1.1em;
+    margin-left: 2em;
 }
 
 header > h1 {
@@ -91,11 +95,6 @@ header > h1 {
 table, td, tr {
     border: 1px solid black;
     border-collapse: collapse;
-}
-
-ul {
-    font-size: 1.1em;
-    margin-left: 2em;
 }
 
 #meme-img{
