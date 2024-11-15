@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');  /* On importe la police Host Grotesk */
 :root {
     --background-color : #DAD7CD;
     --nav-bar-color : #344E41;
@@ -18,7 +18,7 @@ body {
 }
 
 nav {
-    position: fixed;
+    position: fixed; /*La barre de navigation est bien fixée*/
     width: 100%;
     top : 0;
     background-color: var(--nav-bar-color);
@@ -57,7 +57,7 @@ ul.navbar-list > li > a {
 
 h1 {
     display: flex;
-    justify-content: center;
+    justify-content: center; /*Avec le système de flexbox cela nous permet de centrer notre titre de page h1 dans cet exemple.*/
     font-size: 1.5rem;
     text-decoration: underline;
 }
@@ -89,7 +89,7 @@ figcaption {
     font-size: 1.1rem;
 }
 
-@counter-style condiment-boissons {
+@counter-style condiment-boissons { /*On définit un style pour les puces de cette liste afin d'ajouter un peu d'esthétisme.*/
     system: fixed;
     symbols: 🧂 🧃;
     suffix: " ";

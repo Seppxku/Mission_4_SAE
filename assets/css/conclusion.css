@@ -1,11 +1,4 @@
-/* Palette de couleurs :
-1 :
-2 : #A3B18A
-3: #588157
-4 : #3A5A40
-5 : #344E41
-*/
-@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap'); /* On importe la police Host Grotesk */
 
 :root {
     --background-color : #DAD7CD;
@@ -29,7 +22,11 @@ h1 {
     font-size: 1.5em;
 }
 
-h2 {
+.conclusion-bdd h2  {
+    font-size: 1.2em;
+    font-weight: normal;
+}
+.conclu-web h2 {
     font-size: 1.3em;
     text-decoration: underline;
 }
@@ -39,7 +36,7 @@ p {
 }
 
 header > nav {
-    position: fixed;
+    position: fixed; /*La barre de navigation est bien fixée*/
     width: 100%;
     top : 0;
     background-color: var(--nav-bar-color);
@@ -99,5 +96,5 @@ table, td, tr {
 
 #meme-img{
     display: flex;
-    justify-content: center;
+    justify-content: center; /*Avec le système de flexbox cela nous permet de centrer notre image dans cet exemple.*/
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap'); /* On importe la police Host Grotesk */
 
 :root {
     --background-color : #DAD7CD;
@@ -17,7 +17,7 @@ body {
 }
 
 nav {
-    position: fixed;
+    position: fixed; /*La barre de navigation est bien fixée*/
     width: 100%;
     top : 0;
     background-color: var(--nav-bar-color);
@@ -55,7 +55,7 @@ h1, h2, h4 {
 
 .introduction h1 {
     display: flex;
-    justify-content: center;
+    justify-content: center; /*Avec le système de flexbox cela nous permet de centrer notre titre de page h1 dans cet exemple.*/
     font-size: 1.5em;
 }
 
@@ -99,7 +99,7 @@ div.codeSQL {
     font-size: 1rem;
 }
 
-@counter-style pays-liste-requete-1 {
+@counter-style pays-liste-requete-1 { /*On définit un style pour les puces de cette liste afin d'ajouter un peu d'esthétisme, ici pour les pays.*/
     system: fixed;
     symbols: 🇬🇧 🇺🇸 🇫🇷 🇩🇪 🇦🇺;
     suffix: " ";
