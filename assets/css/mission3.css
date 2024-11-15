@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --background-color : #DAD7CD;
+    --nav-bar-color : #344E41;
+    --nav-bar-hover : #2e453a;
+    --vert-clair : #A3B18A;
+    --vert: #588157;
+    --vert-fonce : #3A5A40;
+    --background-color-sql: #bab6ab ;
+}
 body {
     margin: 0;
-    padding: 0;
+    padding: 4em 0 0 0;
+    background-color: var(--background-color);
+    font-family: "Host Grotesk", sans-serif;
 }
 
+nav {
+    position: fixed;
+    width: 100%;
+    top : 0;
+    background-color: var(--nav-bar-color);
+    height: 8%;
+}
 nav > ul.navbar-list {
     display: flex;
     flex-direction: row;
@@ -11,25 +31,105 @@ nav > ul.navbar-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #344E41;
-    position: sticky;
     width: 100%;
 }
-
 ul.navbar-list > li {
-    height: 4em;
+    height: 8vh;
     width: 10em;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 ul.navbar-list > li:hover {
-    background-color: #2e453a;
+    background-color: var(--nav-bar-hover);
 }
-
 ul.navbar-list > li > a {
     font-size: 1.5em;
     text-decoration: none;
-    color: #DAD7CD;
+    color: var(--background-color);
 }
+
+h1, h2, h4 {
+    text-decoration: underline;
+}
+
+.introduction h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+p {
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
+h2,h3,h4 {
+    margin: 1rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+div.codeSQL {
+    display: flex;
+    justify-content: center;
+}
+
+.codeSQL p {
+    border: 2px solid var(--vert-fonce);
+    padding: 1em;
+    width: 50%;
+    background-color: var(--background-color-sql);
+    font-size: 1rem;
+}
+
+@counter-style pays-liste-requete-1 {
+    system: fixed;
+    symbols: 🇬🇧 🇺🇸 🇫🇷 🇩🇪 🇦🇺;
+    suffix: " ";
+}
+
+.partie-1 ul {
+    margin: 1em;
+}
+
+.partie-1 ul:first-of-type {
+    list-style-type: pays-liste-requete-1;
+}
+
+.partie-1 li {
+    font-size: 1.1rem;
+}
+
+.requete-loqman h3::after {
+    content: " 🦸🏻";
+}
+
+.requete-isham h3::after {
+    content: " 🦹🏽‍♂️";
+}
+
+.requete-samy h3::after {
+    content: " 👨🏻‍🍳️";
+}
+
+.requete-jim h3::after {
+    content: " 🧛🏽";
+}
+
